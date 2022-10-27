@@ -17,9 +17,12 @@
         }
 
         async function triggerWebsite() {
+            const mapUrl = WA.room.mapURL
+            const root = mapUrl.substring(0, mapUrl.lastIndexOf("/"))
             active = !active
+
             if (active) {
-                website = await WA.nav.openCoWebSite("schedule.html", false, "", 30)
+                website = await WA.nav.openCoWebSite(root + "/schedule.html", false, "", 30)
             } else {
                 website.close()
             }

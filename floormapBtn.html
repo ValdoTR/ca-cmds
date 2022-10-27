@@ -17,9 +17,12 @@
         }
 
         async function triggerWebsite() {
+            const mapUrl = WA.room.mapURL
+            const root = mapUrl.substring(0, mapUrl.lastIndexOf("/"))
             active = !active
+            
             if (active) {
-                website = await WA.nav.openCoWebSite("floormap.html", false, "", 70)
+                website = await WA.nav.openCoWebSite(root + "/floormap.html", false, "", 70)
             } else {
                 website.close()
             }

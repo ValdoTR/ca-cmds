@@ -15,7 +15,7 @@ body {
     display: grid;
     grid-gap: 0.1rem;
     grid-template-rows: repeat(56, 32px);
-    grid-template-areas: "time800 stage" "time830 stage" "time900 stage" "time930 stage" "time1000 stage" "time1030 stage" "time1100 stage" "time1130 stage" "time1200 stage" "time1230 stage" "time1300 stage" "time1330 stage" "time1400 stage" "time1415 stage" "time1430 stage" "time1445 stage" "time1500 stage" "time1515 stage" "time1530 stage" "time1545 stage" "time1600 stage" "time1630 stage" "time1700 stage" "time1730 stage" "time1800 stage" "time1830 stage" "time1900 stage" "time1930 stage" "time2000 stage" "time2030 stage" "time2100 stage" "time2130 stage" "time2200 stage";
+    grid-template-areas: "time800 ." "time830 ." "time900 ." "time930 ." "time1000 ." "time1030 ." "time1100 ." "time1130 ." "time1200 ." "time1230 ." "time1300 ." "time1330 ." "time1400 ." "time1415 ." "time1430 ." "time1445 ." "time1500 ." "time1515 ." "time1530 ." "time1545 ." "time1600 ." "time1630 ." "time1700 ." "time1730 ." "time1800 ." "time1830 ." "time1900 ." "time1930 ." "time2000 ." "time2030 ." "time2100 ." "time2130 ." "time2200 .";
   }
   
   /**
@@ -28,9 +28,10 @@ body {
     justify-content: flex-end;
     height: 100%;
     padding: 0 0.5rem;
+    font-size: 0.9rem;
   }
-  .time[class*="00"] {
-    border-top: solid 1px white;
+  .time > span {
+    margin-top: -32px;
   }
   .time.start-800 {
     grid-area: time800;
@@ -135,7 +136,7 @@ body {
     grid-area: time2130;
   }
   .time[class*="30"]:not(.start-1300) {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   .time[class*="15"]:not(.start-1500):not(.start-1530) {
     color: transparent;
@@ -152,10 +153,8 @@ body {
     justify-content: center;
     flex-direction: column;
     padding: 0.5rem 1rem;
-    border-radius: 0.2rem;
-    font-size: 1rem;
+    border-radius: 0.3rem;
     font-weight: bold;
-    line-height: 1.4;
     background-color: #6BFFFF;
     color: #272734;
     grid-column-end: span 4;
@@ -229,8 +228,8 @@ body {
   .event.start-1530 {
     grid-row-start: time1530;
   }
-  .event.start-1530 {
-    grid-row-start: time1530;
+  .event.start-1545 {
+    grid-row-start: time1545;
   }
   .event.start-1600 {
     grid-row-start: time1600;

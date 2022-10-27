@@ -7,6 +7,8 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 index: "./index.html",
+                floormapBtn: "./floormapBtn.html",
+                scheduleBtn: "./scheduleBtn.html",
                 ...getMapsScripts(),
             },
         },

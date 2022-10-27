@@ -4,30 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://play.workadventu.re/iframe_api.js"></script>
-    <script>
-        /// <reference path="../node_modules/@workadventure/iframe-api-typings/iframe_api.d.ts" />
-        console.log('Schedule UI Website started successfully');
-
-        let active = false
-        let website
-
-        window.onload = () => {
-            document.querySelector("button").addEventListener("click", triggerWebsite)
-        }
-
-        async function triggerWebsite() {
-            const mapUrl = WA.room.mapURL
-            const root = mapUrl.substring(0, mapUrl.lastIndexOf("/"))
-            active = !active
-
-            if (active) {
-                website = await WA.nav.openCoWebSite(root + "/schedule.html", false, "", 30)
-            } else {
-                website.close()
-            }
-        }
-    </script>
     <style>
         #container {
             margin-top: 4rem;
@@ -67,6 +43,26 @@
             box-sizing: border-box;
         }
     </style>
+    <script src="https://play.workadventu.re/iframe_api.js"></script>
+    <script>
+        /// <reference path="../node_modules/@workadventure/iframe-api-typings/iframe_api.d.ts" />
+        console.log('Schedule UI Website started successfully');
+
+        window.onload = () => {
+            document.querySelector("button").addEventListener("click", triggerWebsite)
+        }
+
+        async function triggerWebsite() {
+            const mapUrl = WA.room.mapURL
+            const root = mapUrl.substring(0, mapUrl.lastIndexOf("/"))
+
+            const websites = await WA.nav.getCoWebSites()
+            if (websites.length) {
+                WA.nav.closeCoWebSite()
+            }
+            WA.nav.openCoWebSite(root + "/schedule.html", false, "", 30)
+        }
+    </script>
 </head>
 <body>
     <div id="container">

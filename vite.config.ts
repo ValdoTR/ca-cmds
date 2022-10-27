@@ -8,7 +8,9 @@ export default defineConfig({
             input: {
                 index: "./index.html",
                 floormapBtn: "./floormapBtn.html",
+                floormap: "./floormap.html",
                 scheduleBtn: "./scheduleBtn.html",
+                schedule: "./schedule.html",
                 ...getMapsScripts(),
             },
         },

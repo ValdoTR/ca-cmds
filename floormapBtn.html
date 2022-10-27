@@ -7,7 +7,7 @@
     <script src="https://play.workadventu.re/iframe_api.js"></script>
     <script>
         /// <reference path="../node_modules/@workadventure/iframe-api-typings/iframe_api.d.ts" />
-        console.log('UI Website started successfully');
+        console.log('Floormap UI Website started successfully');
 
         let active = false
         let website
@@ -20,7 +20,7 @@
             const mapUrl = WA.room.mapURL
             const root = mapUrl.substring(0, mapUrl.lastIndexOf("/"))
             active = !active
-            
+
             if (active) {
                 website = await WA.nav.openCoWebSite(root + "/floormap.html", false, "", 70)
             } else {

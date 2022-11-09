@@ -16,7 +16,7 @@ WA.onInit().then(() => {
         WA.player.setOutlineColor(255, 0, 0)
     }
 
-    currentPopup = WA.ui.openPopup("InstructionPopup", "Bienvenue, vous pouvez consulter le plan de la map ainsi que l'agenda grâce aux boutons situés en haut à gauche de votre écran (veillez ensuite fermer ces pages à l'aide de la croix rouge)", [])
+    currentPopup = WA.ui.openPopup("InstructionPopup", "Bienvenue au lancement de la communauté DigiTesteurs CMDS ! À tout moment, retrouvez l’Agenda, le Guide d’utilisation et le Plan de la map à l’aide des boutons situés en haut à gauche de votre écran. Nous vous souhaitons une belle exploration !", [])
     WA.room.area.onLeave("Instruction").subscribe(closePopup)
     
     WA.room.area.onEnter("Cookie").subscribe(() => {

@@ -1061,8 +1061,8 @@
                  "name":"InstructionPopup",
                  "rotation":0,
                  "visible":true,
-                 "width":288,
-                 "x":1152,
+                 "width":320,
+                 "x":1120,
                  "y":928
                 }],
          "opacity":1,

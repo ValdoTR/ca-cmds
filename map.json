@@ -1064,6 +1064,168 @@
                  "width":320,
                  "x":1120,
                  "y":928
+                }, 
+                {
+                 "class":"area",
+                 "height":224,
+                 "id":30,
+                 "name":"offreNaissanceVideo",
+                 "properties":[
+                        {
+                         "name":"openWebsite",
+                         "type":"string",
+                         "value":"https:\/\/workadventu.re"
+                        }, 
+                        {
+                         "name":"openWebsiteTrigger",
+                         "type":"string",
+                         "value":"onaction"
+                        }, 
+                        {
+                         "name":"openWebsiteTriggerMessage",
+                         "type":"string",
+                         "value":"Appuyez sur ESPACE ou touchez ici pour lire la vid\u00e9o de pr\u00e9sentation du parcours"
+                        }],
+                 "rotation":0,
+                 "visible":true,
+                 "width":256,
+                 "x":96,
+                 "y":1536
+                }, 
+                {
+                 "class":"area",
+                 "height":224,
+                 "id":31,
+                 "name":"offreNaissanceEnquete",
+                 "properties":[
+                        {
+                         "name":"openWebsite",
+                         "type":"string",
+                         "value":"https:\/\/workadventu.re"
+                        }, 
+                        {
+                         "name":"openWebsiteTrigger",
+                         "type":"string",
+                         "value":"onaction"
+                        }, 
+                        {
+                         "name":"openWebsiteTriggerMessage",
+                         "type":"string",
+                         "value":"Appuyez sur ESPACE ou touchez ici pour acc\u00e9der \u00e0 l'enqu\u00eate"
+                        }],
+                 "rotation":0,
+                 "visible":true,
+                 "width":256,
+                 "x":544,
+                 "y":1536
+                }, 
+                {
+                 "class":"area",
+                 "height":224,
+                 "id":32,
+                 "name":"devenirClientVideo",
+                 "properties":[
+                        {
+                         "name":"openWebsite",
+                         "type":"string",
+                         "value":"https:\/\/workadventu.re"
+                        }, 
+                        {
+                         "name":"openWebsiteTrigger",
+                         "type":"string",
+                         "value":"onaction"
+                        }, 
+                        {
+                         "name":"openWebsiteTriggerMessage",
+                         "type":"string",
+                         "value":"Appuyez sur ESPACE ou touchez ici pour lire la vid\u00e9o de pr\u00e9sentation du parcours"
+                        }],
+                 "rotation":0,
+                 "visible":true,
+                 "width":256,
+                 "x":960,
+                 "y":1536
+                }, 
+                {
+                 "class":"area",
+                 "height":224,
+                 "id":33,
+                 "name":"devenirClientEnquete",
+                 "properties":[
+                        {
+                         "name":"openWebsite",
+                         "type":"string",
+                         "value":"https:\/\/workadventu.re"
+                        }, 
+                        {
+                         "name":"openWebsiteTrigger",
+                         "type":"string",
+                         "value":"onaction"
+                        }, 
+                        {
+                         "name":"openWebsiteTriggerMessage",
+                         "type":"string",
+                         "value":"Appuyez sur ESPACE ou touchez ici pour acc\u00e9der \u00e0 l'enqu\u00eate"
+                        }],
+                 "rotation":0,
+                 "visible":true,
+                 "width":256,
+                 "x":1408,
+                 "y":1536
+                }, 
+                {
+                 "class":"area",
+                 "height":224,
+                 "id":34,
+                 "name":"nouveauxArrivantsVideo",
+                 "properties":[
+                        {
+                         "name":"openWebsite",
+                         "type":"string",
+                         "value":"https:\/\/workadventu.re"
+                        }, 
+                        {
+                         "name":"openWebsiteTrigger",
+                         "type":"string",
+                         "value":"onaction"
+                        }, 
+                        {
+                         "name":"openWebsiteTriggerMessage",
+                         "type":"string",
+                         "value":"Appuyez sur ESPACE ou touchez ici pour lire la vid\u00e9o de pr\u00e9sentation du parcours"
+                        }],
+                 "rotation":0,
+                 "visible":true,
+                 "width":256,
+                 "x":1824,
+                 "y":1536
+                }, 
+                {
+                 "class":"area",
+                 "height":224,
+                 "id":35,
+                 "name":"nouveauxArrivantsEnquete",
+                 "properties":[
+                        {
+                         "name":"openWebsite",
+                         "type":"string",
+                         "value":"https:\/\/workadventu.re"
+                        }, 
+                        {
+                         "name":"openWebsiteTrigger",
+                         "type":"string",
+                         "value":"onaction"
+                        }, 
+                        {
+                         "name":"openWebsiteTriggerMessage",
+                         "type":"string",
+                         "value":"Appuyez sur ESPACE ou touchez ici pour acc\u00e9der \u00e0 l'enqu\u00eate"
+                        }],
+                 "rotation":0,
+                 "visible":true,
+                 "width":256,
+                 "x":2272,
+                 "y":1536
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -1234,7 +1396,7 @@
          "y":0
         }],
  "nextlayerid":99,
- "nextobjectid":30,
+ "nextobjectid":36,
  "orientation":"orthogonal",
  "properties":[
         {

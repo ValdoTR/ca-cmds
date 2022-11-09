@@ -1,6 +1,6 @@
 /// <reference types="@workadventure/iframe-api-typings" />
 
-import { CreateUIWebsiteEvent } from "@workadventure/iframe-api-typings/Api/Events/Ui/UIWebsite";
+import { CreateUIWebsiteEvent } from "@workadventure/iframe-api-typings/front/Api/Events/Ui/UIWebsite";
 import { bootstrapExtra } from "@workadventure/scripting-api-extra";
 
 console.log('Script started successfully');
@@ -13,7 +13,7 @@ WA.onInit().then(() => {
     console.log('Player tags: ',WA.player.tags)
 
     if (WA.player.tags.includes('ca')) {
-        WA.player.setOutlineColor(20, 119, 91)
+        WA.player.setOutlineColor(255, 0, 0)
     }
 
     currentPopup = WA.ui.openPopup("InstructionPopup", "Bienvenue, vous pouvez consulter le plan de la map ainsi que l'agenda grâce aux boutons situés en haut à gauche de votre écran (veillez ensuite fermer ces pages à l'aide de la croix rouge)", [])

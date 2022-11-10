@@ -10,6 +10,7 @@ export default defineConfig({
                 floormapBtn: "./floormapBtn.html",
                 floormap: "./floormap.html",
                 scheduleBtn: "./scheduleBtn.html",
+                guideBtn: "./guideBtn.html",
                 schedule: "./schedule.html",
                 ...getMapsScripts(),
             },

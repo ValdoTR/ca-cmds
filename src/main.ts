@@ -25,7 +25,7 @@ WA.onInit().then(() => {
     WA.room.area.onLeave("Cookie").subscribe(closePopup)
 
     WA.room.area.onEnter("ThumbUp").subscribe(() => {
-        currentPopup = WA.ui.openPopup("ThumbUpPopup", "Savais-tu que nous étions présents sur les réseaux sociaux ? Facebook, Twitter, ou encore LinkedIn. Avec plus de 15 000 abonnés, notre page Facebook rassemble notre plus forte communauté. N’hésite pas à découvrir notre activité sur ces plateformes !", [])
+        currentPopup = WA.ui.openPopup("ThumbUpPopup", "Savais-tu que nous étions présents sur les réseaux sociaux ? Facebook, Twitter, Tik-Tok ou encore LinkedIn. Avec plus de 15 000 abonnés, notre page Facebook rassemble notre plus forte communauté. N’hésite pas à découvrir notre activité sur ces plateformes !", [])
     })
     WA.room.area.onLeave("ThumbUp").subscribe(closePopup)
 
@@ -42,8 +42,8 @@ WA.onInit().then(() => {
     const mapUrl = WA.room.mapURL
     const root = mapUrl.substring(0, mapUrl.lastIndexOf("/"))
 
-    const floormapBtn: CreateUIWebsiteEvent = {
-        url:  root + "/floormapBtn.html",
+    const guideBtn: CreateUIWebsiteEvent = {
+        url:  root + "/guideBtn.html",
         visible: true,
         allowApi: true,
         allowPolicy: "",   // The list of feature policies allowed
@@ -56,10 +56,9 @@ WA.onInit().then(() => {
             height: "65px",
         },
     }
-    WA.ui.website.open(floormapBtn)
 
-    const scheduleBtn: CreateUIWebsiteEvent = {
-        url:  root + "/scheduleBtn.html",
+    const floormapBtn: CreateUIWebsiteEvent = {
+        url:  root + "/floormapBtn.html",
         visible: true,
         allowApi: true,
         allowPolicy: "",   // The list of feature policies allowed
@@ -69,9 +68,28 @@ WA.onInit().then(() => {
         },
         size: {            // Size on the UI (available units: px|em|%|cm|in|pc|pt|mm|ex|vw|vh|rem and others values auto|inherit)
             width: "65px",
-            height: "130px",
+            height: "120px",
         },
     }
+
+    const scheduleBtn: CreateUIWebsiteEvent = {
+        url:  root + "/scheduleBtn.html",
+        visible: true,
+        allowApi: true,
+        allowPolicy: "",   // The list of feature policies allowed
+        position: {
+            vertical: "middle",
+            horizontal: "left",
+        },
+        size: {            // Size on the UI (available units: px|em|%|cm|in|pc|pt|mm|ex|vw|vh|rem and others values auto|inherit)
+            width: "65px",
+            height: "655px",
+        },
+    }
+
+  
+    WA.ui.website.open(floormapBtn)
+    WA.ui.website.open(guideBtn)
     WA.ui.website.open(scheduleBtn)
 
     // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure

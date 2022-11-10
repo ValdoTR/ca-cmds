@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         #container {
-            margin-top: 4rem;
+            margin-top: 0.5rem;
             flex-direction: row;
             align-items: center;
             display: flex;
@@ -46,7 +46,7 @@
     <script src="https://play.workadventu.re/iframe_api.js"></script>
     <script>
         /// <reference path="../node_modules/@workadventure/iframe-api-typings/iframe_api.d.ts" />
-        console.log('Floormap UI Website started successfully');
+        console.log('Guide UI Website started successfully');
 
         window.onload = () => {
             document.querySelector("button").addEventListener("click", triggerWebsite)
@@ -60,14 +60,14 @@
             if (websites.length) {
                 WA.nav.closeCoWebSite()
             }
-            WA.nav.openCoWebSite(root + "/floormap.html", false, "", 70)
+            WA.nav.openCoWebSite(root + "/Guide.pdf")
         }
     </script>
 </head>
 <body>
     <div id="container">
         <button type="button">
-            <img draggable="false" src="floorplan-icon.svg" alt="Floormap">
+            <img draggable="false" src="guide-icon.svg" alt="Guide">
         </button>
     </div>
 </body>

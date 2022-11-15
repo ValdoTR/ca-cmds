@@ -1011,6 +1011,28 @@
                 }, 
                 {
                  "class":"area",
+                 "height":64,
+                 "id":38,
+                 "name":"Stage",
+                 "properties":[
+                        {
+                         "name":"jitsiRoom",
+                         "type":"string",
+                         "value":"Stage"
+                        }, 
+                        {
+                         "name":"jitsiRoomAdminTag",
+                         "type":"string",
+                         "value":"ca"
+                        }],
+                 "rotation":0,
+                 "visible":true,
+                 "width":288,
+                 "x":1984,
+                 "y":96
+                }, 
+                {
+                 "class":"area",
                  "height":84.1169,
                  "id":26,
                  "name":"Cookie",
@@ -1241,6 +1263,72 @@
                  "width":224,
                  "x":256,
                  "y":1024
+                }, 
+                {
+                 "class":"area",
+                 "height":384,
+                 "id":39,
+                 "name":"Park1",
+                 "properties":[
+                        {
+                         "name":"jitsiRoom",
+                         "type":"string",
+                         "value":"Park1"
+                        }, 
+                        {
+                         "name":"jitsiRoomAdminTag",
+                         "type":"string",
+                         "value":"ca"
+                        }],
+                 "rotation":0,
+                 "visible":true,
+                 "width":160,
+                 "x":2752,
+                 "y":576
+                }, 
+                {
+                 "class":"area",
+                 "height":288,
+                 "id":40,
+                 "name":"Park2",
+                 "properties":[
+                        {
+                         "name":"jitsiRoom",
+                         "type":"string",
+                         "value":"Park2"
+                        }, 
+                        {
+                         "name":"jitsiRoomAdminTag",
+                         "type":"string",
+                         "value":"ca"
+                        }],
+                 "rotation":0,
+                 "visible":true,
+                 "width":160,
+                 "x":2752,
+                 "y":1280
+                }, 
+                {
+                 "class":"area",
+                 "height":256,
+                 "id":41,
+                 "name":"Park3",
+                 "properties":[
+                        {
+                         "name":"jitsiRoom",
+                         "type":"string",
+                         "value":"Park3"
+                        }, 
+                        {
+                         "name":"jitsiRoomAdminTag",
+                         "type":"string",
+                         "value":"ca"
+                        }],
+                 "rotation":0,
+                 "visible":true,
+                 "width":160,
+                 "x":3392,
+                 "y":1024
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -1456,7 +1544,7 @@
          "y":0
         }],
  "nextlayerid":101,
- "nextobjectid":38,
+ "nextobjectid":42,
  "orientation":"orthogonal",
  "properties":[
         {

@@ -1350,6 +1350,11 @@
                          "name":"openWebsiteTriggerMessage",
                          "type":"string",
                          "value":"Appuyez sur ESPACE ou touchez ici pour consulter les informations sur ce parcours"
+                        }, 
+                        {
+                         "name":"openWebsiteWidth",
+                         "type":"int",
+                         "value":100
                         }],
                  "rotation":0,
                  "visible":true,
@@ -1377,6 +1382,11 @@
                          "name":"openWebsiteTriggerMessage",
                          "type":"string",
                          "value":"Appuyez sur ESPACE ou touchez ici pour consulter les informations sur ce parcours"
+                        }, 
+                        {
+                         "name":"openWebsiteWidth",
+                         "type":"int",
+                         "value":100
                         }],
                  "rotation":0,
                  "visible":true,
@@ -1404,6 +1414,11 @@
                          "name":"openWebsiteTriggerMessage",
                          "type":"string",
                          "value":"Appuyez sur ESPACE ou touchez ici pour consulter les informations sur ce parcours"
+                        }, 
+                        {
+                         "name":"openWebsiteWidth",
+                         "type":"int",
+                         "value":100
                         }],
                  "rotation":0,
                  "visible":true,

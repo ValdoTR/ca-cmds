@@ -16,7 +16,7 @@ WA.onInit().then(() => {
         WA.player.setOutlineColor(255, 0, 0)
     }
 
-    currentPopup = WA.ui.openPopup("InstructionPopup", "Bienvenue au lancement de la communauté DigiTesteurs CMDS ! À tout moment, retrouvez l’Agenda, le Guide d’utilisation et le Plan de la map à l’aide des boutons situés en haut à gauche de votre écran. Nous vous souhaitons une belle exploration !", [])
+    currentPopup = WA.ui.openPopup("InstructionPopup", "Bienvenue au lancement de la communauté DigiTesteurs CMDS ! À tout moment, retrouvez le Guide d’utilisation, le Plan de la carte ainsi que l’Agenda en haut à gauche de votre écran. Pour vous déplacer, utilisez les flèches de votre clavier. Nous vous souhaitons une belle exploration ! Rendez-vous à 14h45 pour la plénière !", [])
     WA.room.area.onLeave("Instruction").subscribe(closePopup)
     
     WA.room.area.onEnter("Cookie").subscribe(() => {
